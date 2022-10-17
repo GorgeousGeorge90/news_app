@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1.2em;
+    font-family: fantasy;
+    margin: 10px 0 10px 0;
+  }
+
+  p {
+    margin: 0;
+
+    input {
+      width: 500px;
+      height: 20px;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 500px;
+      height: 200px;
+      resize: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin: 5px 0 10px 0;
+      padding: 5px;
+    }
+
+  }
+
+  .errors {
+        color: red;
+        font-weight: bolder;
+  }
+}

@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 900px;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 0.9em;
+  background-color: aliceblue;
+  height: calc(100vh - 200px);
+
+  li {
+    list-style: none;
+    margin-top: 10px;
+
+    a {
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      padding: 2px;
+      background-color: darkgray;
+      color: whitesmoke;
+
+      &:visited {
+        background-color: lightskyblue;
+      }
+    }
+  }
+}

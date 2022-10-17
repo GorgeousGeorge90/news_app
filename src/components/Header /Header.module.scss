@@ -1,0 +1,58 @@
+.header {
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  background-color: dimgray;
+  margin: 0 auto;
+  font-family:fantasy;
+  color: whitesmoke;
+
+  .logo {
+    width: 200px;
+    img {
+      width: 100px;
+      margin: 50px 50px;
+    }
+  }
+
+  .title {
+    margin: auto 20px;
+    font-size: 1.1em;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+  }
+
+  nav {
+    flex-grow: 1;
+
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 170px 0 0 0;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          font-size: 1.1em;
+          font-weight: bolder;
+
+          &:hover {
+            color: darkorange;
+          }
+        }
+      }
+    }
+  }
+
+}
