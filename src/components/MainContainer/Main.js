@@ -34,7 +34,7 @@ const Main = ({posts, addPost, deletePost, updatePost, basePic}) => {
                     errors?.post ?  <p>{errors?.post.message}</p> : null
                 }
             </div>
-            <div>
+            <div className={styles.posts}>
                 {
                     posts.length === 0 ? <p>No posts</p>: posts.map(post=> {
                        return <Post deletePost={deletePost}

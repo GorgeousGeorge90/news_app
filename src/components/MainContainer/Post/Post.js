@@ -24,7 +24,7 @@ const Post = ({text,deletePost,updatePost, id}) => {
             <span onDoubleClick={()=>{
                 modeOn()
             }}>{text}</span>}
-            <span onClick={() => deletePost(id)}>&#128465;</span>
+            <span className={styles.garbage} onClick={() => deletePost(id)}>&#128465;</span>
         </div>
     )
 }

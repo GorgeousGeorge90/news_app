@@ -6,23 +6,25 @@
   margin: 0 auto;
   font-weight: bolder;
   font-size: 0.9em;
-  background-color: aliceblue;
   height: calc(100vh - 200px);
 
   li {
-    list-style: none;
-    margin-top: 10px;
+    list-style: square;
+    margin-top: 20px;
 
     a {
       text-decoration: none;
       border: none;
       border-radius: 5px;
       padding: 2px;
-      background-color: darkgray;
-      color: whitesmoke;
+      color: black;
 
       &:visited {
-        background-color: lightskyblue;
+        color: darkgray;
+      }
+
+      &:hover {
+        color: darkorange;
       }
     }
   }

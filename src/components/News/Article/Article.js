@@ -3,7 +3,7 @@ import styles from './Article.module.scss'
 import {useRecoilValue} from 'recoil';
 import {getSingleArticle} from '../../../recoil/selectors';
 import {useNavigate} from 'react-router-dom';
-import Preloader from "../../common /Preloader/Preloader";
+
 
 
 
@@ -11,7 +11,6 @@ const Article = ()=> {
 
     const {title} = useParams()
     const [article] = useRecoilValue(getSingleArticle(title))
-    console.log(article)
     const navigate = useNavigate()
 
     const navigateTo = () => {
