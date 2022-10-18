@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/gorgeousgeorge90.github.io/new_app/static/css/main.693c83e8.css",
+    "main.js": "/gorgeousgeorge90.github.io/new_app/static/js/main.8624bbd4.js",
+    "static/js/787.7b63f85e.chunk.js": "/gorgeousgeorge90.github.io/new_app/static/js/787.7b63f85e.chunk.js",
+    "static/media/user.png": "/gorgeousgeorge90.github.io/new_app/static/media/user.9dc92b0a1003b149f6c9.png",
+    "index.html": "/gorgeousgeorge90.github.io/new_app/index.html",
+    "static/media/loader.svg": "/gorgeousgeorge90.github.io/new_app/static/media/loader.13456bdc3bb33c05694a5fce0c10fcda.svg",
+    "main.693c83e8.css.map": "/gorgeousgeorge90.github.io/new_app/static/css/main.693c83e8.css.map",
+    "main.8624bbd4.js.map": "/gorgeousgeorge90.github.io/new_app/static/js/main.8624bbd4.js.map",
+    "787.7b63f85e.chunk.js.map": "/gorgeousgeorge90.github.io/new_app/static/js/787.7b63f85e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.693c83e8.css",
+    "static/js/main.8624bbd4.js"
+  ]
+}
