@@ -1,8 +1,8 @@
 import styles from './Feedback.module.scss';
-import {useForm} from "react-hook-form";
-import {yupResolver} from "@hookform/resolvers/yup/dist/yup";
-import {CommentSchema} from "../../validation/validation";
-import Comment from "./Comment/Comment";
+import {useForm} from 'react-hook-form';
+import {yupResolver} from '@hookform/resolvers/yup/dist/yup';
+import {CommentSchema} from '../../validation/validation';
+import Comment from './Comment/Comment';
 
 
 const Feedback = ({comments,addLike,addComment,deleteComment})=> {
@@ -29,12 +29,13 @@ const Feedback = ({comments,addLike,addComment,deleteComment})=> {
                 </div>
             </form>
             <div>
-                {!comments ? <p>No comments!</p>: comments.map(comment=> {
+                { comments.length === 0 ? <p>No comments!</p>: comments.map(comment=> {
                     return <Comment name={comment.name}
                                     text={comment.text}
                                     addLike={addLike}
                                     deleteComment={deleteComment}
                                     id={comment.id}
+                                    likes={comment.likes}
                     />
                 })}
             </div>

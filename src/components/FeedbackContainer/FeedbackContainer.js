@@ -2,11 +2,16 @@ import {useRecoilState} from "recoil";
 import {usersComments} from "../../recoil/atoms";
 import {v4 as uuid} from 'uuid';
 import Feedback from "./Feedback";
+import {useEffect} from "react";
 
 
 const FeedbackContainer = () => {
 
     const [comments, setComments] = useRecoilState(usersComments)
+
+    useEffect(()=> {
+        localStorage.setItem('comments', JSON.stringify(comments))
+    },[comments])
 
     const addComment = (name,text) => {
         const newCom = {
@@ -29,17 +34,15 @@ const FeedbackContainer = () => {
     }
 
     const addLike = id => {
-        setComments(comments=> {
-            return comments.map(comment => {
-                if (comment.id === id) {
-                    return comment.likes++
-                } else {
-                    return  comment
-                }
-            })
+        const newCommentsLike = comments.map(comment => {
+            if (comment.id === id) {
+                return {...comment, likes: comment.likes + 1}
+            } else {
+                return comment
+            }
         })
+        setComments(newCommentsLike)
     }
-
 
     return (
         <>

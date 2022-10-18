@@ -15,7 +15,7 @@ function App() {
                 <Routes>
                     <Route path='/main' element={<MainContainer/>}/>
                     <Route path='/news' element={<News/>}/>
-                    <Route path='/news/:id' element={<Article/>}/>
+                    <Route path='/news/:title' element={<Article/>}/>
                     <Route path ='/feedback' element={<FeedbackContainer/>}/>
                 </Routes>
         </RecoilRoot>

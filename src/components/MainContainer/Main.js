@@ -5,7 +5,7 @@ import {yupResolver} from '@hookform/resolvers/yup';
 import {PostSchema} from '../../validation/validation';
 
 
-const Main = ({posts, addPost, deletePost, basePic}) => {
+const Main = ({posts, addPost, deletePost, updatePost, basePic}) => {
 
     const {register,handleSubmit,reset, formState:{errors}}=useForm({
         resolver: yupResolver(PostSchema),
@@ -38,6 +38,7 @@ const Main = ({posts, addPost, deletePost, basePic}) => {
                 {
                     posts.length === 0 ? <p>No posts</p>: posts.map(post=> {
                        return <Post deletePost={deletePost}
+                                    updatePost={updatePost}
                                     text={post.text}
                                     id={post.id}/>
                     })

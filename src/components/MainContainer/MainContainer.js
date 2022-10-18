@@ -26,6 +26,18 @@ const MainContainer = () => {
         })
     }
 
+
+    const updatePost = (id,text) => {
+        const updatedPosts = posts.map(post => {
+          if (post.id === id) {
+              return {...post, text}
+          } else {
+                  return post
+              }
+          })
+        setPosts(updatedPosts)
+    }
+
     const deletePost = id => {
         const newPosts = posts.filter(post=> post.id !== id)
         setPosts(newPosts)
@@ -36,6 +48,7 @@ const MainContainer = () => {
             <Main   posts={posts}
                     addPost={addPost}
                     deletePost={deletePost}
+                    updatePost={updatePost}
                     basePic={basePic}/>
         </>
     )

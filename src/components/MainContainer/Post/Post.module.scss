@@ -1,10 +1,18 @@
 .content {
   background: aliceblue;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid gainsboro;
+  text-align: start;
+  justify-content: center;
+  border-radius: 10px;
   display: flex;
   width: 500px;
   height: 40px;
   margin: 0 auto;
   font-family: Damascus;
+  background-color: whitesmoke;
+
+  input {
+    margin: auto 0;
+    height: 20px;
+  }
 }

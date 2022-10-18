@@ -16,8 +16,8 @@ const News = ()=> {
                     <ul>
                         {
                              myNews.contents.map(post => {
-                                 return <li><NavLink to={`/news/${myNews.contents.indexOf(post)}`}
-                                                     key={myNews.contents.indexOf(post)}>
+                                 return <li><NavLink to={`/news/${post.title}`}
+                                                     key={post.id}>
                                      {post.title}</NavLink></li>
                         })
                         }

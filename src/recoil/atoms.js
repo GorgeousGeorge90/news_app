@@ -9,5 +9,5 @@ export const userPosts = atom({
 
 export const usersComments = atom({
     key: 'comments',
-    default: [],
+    default: JSON.parse(localStorage.getItem('comments')) || [],
 })

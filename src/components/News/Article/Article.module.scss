@@ -2,4 +2,24 @@
   width: 900px;
   margin: 0 auto;
   text-align: center;
+
+  .first {
+    width: 600px;
+    margin: 0 auto;
+
+    button {
+      padding: 5px;
+      margin: 10px;
+    }
+
+    img {
+      width: 600px;
+      border: 2px solid darkgrey;
+      border-radius: 10px;
+    }
+  }
+
+  .info {
+    font-size: 0.8em;
+  }
 }
